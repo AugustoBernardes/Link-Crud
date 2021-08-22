@@ -1,15 +1,19 @@
 # Link Crud 💾
 
 What this app make:
-It's a CRUD here you add a title description and URL , before save on DataBase will check all the fields , if is a real URL after this save.
-You can edit all the cards , and to go to your URL pages it's just use the search bar after the app name your link title. Example...
-App name (localhost:3000/)
-If you have a card with title youtube and wanna go to this link just put...
+It's a CRUD here you add a title description and URL , before save on DataBase will check all the fields , if is a real URL after this save.\
+You can edit all the cards , and to go to your URL pages it's just use the search bar after the app name your link title. Example...\
+App name (localhost:3000/).
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+If you have a card with title youtube and wanna go to this link just put...\
 (localhost:3000/youtube)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 After this you will be redirected.
 And will be added 1 click.
+Obs: you can delete the file (gitignore) too if you want.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To chek the app working just click [here](https://link-crud.herokuapp.com)
+To check the app working just click [here](https://link-crud.herokuapp.com)
 
 # Dependencies
 
@@ -44,10 +48,9 @@ To chek the app working just click [here](https://link-crud.herokuapp.com)
   
 # About Data Base
 
-How you can see on the files have a file named (.env_sample).
-Change the name to (.env) to you application work, after this follow the instruction.
-Put you MongoDB url and a put number.
-Obs: you can delete the file (gitignore) too if you want.
+How you can see on the files have a file named (.env_sample).\
+Change the name to (.env) to you application work, after this follow the instruction.\
+Put you MongoDB url and a put number.\
 Like this:
 ```bash
   DB_KEY=mongodb+srv://<user>:<password>@dataBase/<yourDataBaseName>?retryWrites=true&w=majority
