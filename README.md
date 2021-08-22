@@ -47,7 +47,7 @@ Put you MongoDB url and a put number.
 Obs: you can delete the file (gitignore) too if you want.
 Like this:
 ```bash
-  DB_KEY=mongodb+srv://<user>:<password>@cluster0.mc9wa.mongodb.net/<yourDataBaseName>?retryWrites=true&w=majority
+  DB_KEY=mongodb+srv://<user>:<password>@dataBase/<yourDataBaseName>?retryWrites=true&w=majority
   PORT=3000
 ```
 
