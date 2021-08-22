@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container d-flex align-items-center mt-5 flex-column text-center">
+        <div class="card border border-dark w-50">
+            <h1 class="text-danger">Error</h1>
+            <% if(title){ %> 
+                <h2>There is no (<%=title%>) in the Data Base.</h2>
+            <% } else { %> 
+                <% if(linkTitle == 'add') { %> 
+                    <h2>Change the title , you can't use <%=linkTitle %>. </h2>
+                <% } else{ %> 
+                    <h2>(<%=linkUrl %>) is not a URL.</h2>
+                <% } %> 
+            <% } %> 
+        </div>
+        <a class="btn btn-info mt-3 w-50" href="/">Back</a>
+    </div>
+</body>
+</html>

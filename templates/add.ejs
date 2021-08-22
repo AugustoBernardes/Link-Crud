@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container d-flex flex-column w-50 mt-5">
+        <h1 class="text-center">Add Link</h1>
+
+        <form class="d-flex flex-column " action="/" method="POST">
+            <input type="text" class="mb-2 text-center" name='title' maxlength="20" required placeholder="Title" value='<%= body.title %>'>
+            <input type="text" class="mb-2 text-center" name='description' maxlength="20" placeholder="Description" value='<%= body.description %>'>
+            <input type="text" class="mb-4 text-center" name='url' required placeholder="Url" value='<%= body.url %>' >
+            <button class="btn btn-primary">Add</button>
+        </form>
+    </div>
+
+    <% if (error) { %>
+        <h2><%= error.message %></h2>
+      <% } %>
+</body>
+</html>

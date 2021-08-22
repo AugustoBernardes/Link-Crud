@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Links</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="">Links</h1>
+
+            <a class="btn btn-primary mb-2" href="/add">Add new Link</a>
+        </div>
+        <% links.forEach((link) => { %>
+            <div class="card p-3 mb-2 border border-dark" id='<%=link._id %>'>
+                <form class="d-flex align-items-center justify-content-between" method="POST" action="/?_method=DELETE">
+                    <div class="d-flexc flex-column">
+                        <h2><%=link.title %></h2>
+                        <div><%=link.description %></div>
+                        <a><%=link.url %></a>
+                        <div class="text-info"><i class="material-icons">bar_chart</i>Clicks: <%=link.click %></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <input name="id" value="<%=link._id %>" hidden>
+                        <a class="btn btn-info mb-1" href="/edit/<%=link._id %>">Edit</a>
+                        <button class="btn btn-danger" type="submit">Delete</button>
+                    </div>
+                </form>
+            </div>
+        <% }) %> 
+
+    </div>
+
+</body>
+</html>
