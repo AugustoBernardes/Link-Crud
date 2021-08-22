@@ -7,6 +7,7 @@ App name (localhost:3000/)
 If you have a card with title youtube and wanna go to this link just put...
 (localhost:3000/youtube)
 After this you will be redirected.
+And will be added 1 click.
 
 To chek the app working just click [here](https://link-crud.herokuapp.com)
 
