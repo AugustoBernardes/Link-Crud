@@ -44,6 +44,7 @@ After this you will be redirected.
 How you can see on the files have a file named (.env_sample).
 Change the name to (.env) to you application work, after this follow the instruction.
 Put you MongoDB url and a put number.
+Obs: you can delete the file (gitignore) too if you want.
 Like this:
 ```bash
   DB_KEY=mongodb+srv://<user>:<password>@cluster0.mc9wa.mongodb.net/<yourDataBaseName>?retryWrites=true&w=majority
