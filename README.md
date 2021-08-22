@@ -12,8 +12,9 @@ After this you will be redirected.
 And will be added 1 click.
 Obs: you can delete the file (gitignore) too if you want.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
 To check the app working just click [here](https://link-crud.herokuapp.com)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # Dependencies
 
@@ -42,6 +43,7 @@ To check the app working just click [here](https://link-crud.herokuapp.com)
 ```
 #  Observation:
   Is necessery you have NodeJs...
+---------------------------------------------------------------------------------------------------------------------------------------------------------
   ```bash
     https://nodejs.org/en/
   ```
@@ -52,14 +54,16 @@ How you can see on the files have a file named (.env_sample).\
 Change the name to (.env) to you application work, after this follow the instruction.\
 Put you MongoDB url and a put number.\
 Like this:
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ```bash
   DB_KEY=mongodb+srv://<user>:<password>@dataBase/<yourDataBaseName>?retryWrites=true&w=majority
   PORT=3000
 ```
 
 To start  the app use:
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ```console
-  npm start
+   $ npm start
 ```
 
 # Design 🖥️
