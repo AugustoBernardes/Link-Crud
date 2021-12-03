@@ -12,8 +12,6 @@ After this you will be redirected.
 And will be added 1 click.
 Obs: you can delete the file (gitignore) too if you want.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-To check the app working just click [here](https://link-crud.herokuapp.com)
----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # Dependencies
